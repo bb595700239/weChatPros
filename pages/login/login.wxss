@@ -1,0 +1,21 @@
+
+
+.regist-step{ margin-top: 40rpx; margin-bottom: 35rpx;flex-direction:row; display: flex;justify-content:space-between; padding: 0 40rpx;}
+
+.list{text-align: center; color: #a2a0a0;position: relative; }
+
+.step{width: 60rpx; height:60rpx;border-radius: 60rpx;background: #d8d8d8; color: #939393;margin: 0 auto;
+font-size: 12pt;position: relative;z-index: 10;border: 6rpx solid #f0f0f0;display: flex;align-items:center;justify-content:center; }
+.active .step{background: #30cfbf;color:#fff;}
+.active .info{color: #30cfbf;}
+.info{font-size: 11pt; margin-top: 16rpx;}
+
+.list:before{content: '';width:100%; height: 3rpx; border-bottom: 1px dashed #b5b5b5;position: absolute;top: 34rpx;margin-left:30rpx;}
+.list.active:before{border-bottom-style:solid;}
+.list.active:after{border-bottom: 1rpx solid #b5b5b5;width: 10rpx;height: 0;
+position: absolute;content: ' ';left: 150%;top:33rpx; margin-left: 18rpx;    
+-webkit-transform: rotate(35deg);transform: rotate(35deg); }
+.list-last:before{display: none;}
+.list-last:after{display: none;}
+
+.g-form input{display: block;}

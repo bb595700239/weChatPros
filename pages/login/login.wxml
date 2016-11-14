@@ -1,0 +1,38 @@
+
+    <view class="regist-step">
+        <view class="list active">
+            <view class="step"><text>1</text></view>
+            <view class="info"><text>账号注册</text></view>
+        </view>
+        <view class="list active">
+            <view class="step"><text>2</text></view>
+            <view class="info"><text>交付押金</text></view>
+        </view>
+        <view class="list">
+            <view class="step"><text>3</text></view>
+            <view class="info"><text>实名认证</text></view>
+        </view>
+        <view class="list list-last">
+            <view class="step"><text>4</text></view>
+            <view class="info"><text>注册账号</text></view>
+        </view>
+    </view>
+    <view class="weui_cells weui_cells_radius marginlr">
+        <view class="weui_cell">
+            <view class="weui_cell_hd"><label class="weui-label">手机号</label></view>
+            <view class="weui_cell_bd weui_cell_primary">
+                <input type="text" bindblur="ruleInput" data-name="phone" class="weui_input" placeholder="请输入手机号码" />
+            </view>
+        </view>
+        <view class="weui_cell" id="getcode">
+            <view class="weui_cell_hd"><label class="weui-label">验证码</label></view>
+            <view class="weui_cell_bd weui_cell_primary">
+               <input type="text" bindblur="ruleInput" data-name="yzm" class="weui_input" placeholder="请输入验证码" />
+            </view>
+            <bottom hover-class="button-hover" href="#" class="btn-def {{btndisabled?'btn-disabled':''}}" data-url="sendMsgNew.action?type=1">获取验证码</bottom>
+        </view>
+    </view>
+    <button hover-class="button-hover" bindtap="ruleall"  class="btn surebtn marginlr">注册</button>
+    
+    <import src="../alert/alert.wxml"/>
+    <template is="alert" data="{{text:alertText,show:alertShow}}"/>

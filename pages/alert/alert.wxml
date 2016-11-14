@@ -1,0 +1,3 @@
+<template name="alert">
+  <view  class="isAlert" hidden="{{show ? false : true}}"><text>{{text}}</text></view>
+</template>

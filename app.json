@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2b2b2b",
+    "navigationBarTitleText": "Sunny单车",
+    "backgroundColor":"#f0f0f0",
+    "navigationBarTextStyle":"white"
+  }
+}
